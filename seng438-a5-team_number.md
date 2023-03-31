@@ -16,36 +16,36 @@
 
 # Assessment Using Reliability Growth Testing 
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_1.PNG)
 
 These were our results using Failure Report #9, which dictated a simple failure report through failure numbers, time since and between failures (i.e. previous failures), cumulative execution time, and the severity class. We know that the severity class is linked to the failure intensity and a low severity class is associated with a lower failure count often. As such we modified our data to align with the FC count as being mostly stable within this data. Then we examined the (F) which was the time since the previous failure and measured the identification work of the failure in hours. Then the (E) which was the cumulative execution time and converted them from minutes to seconds. This gave us the data we needed to create models and compare them using C-SFRAT. Within this application we are given several parameters that dictate the best model. What we found that demonstrates this is Log-Likelihood, AIC, and BIC. Higher Log-Likelihood are associated with better data fits for the models and as such you can see that S and TL are among the two best models and also have the best AIC (lower AIC gives us better model fits). However, NB2 and S gave the two best BIC values and this outlines S to be the most superior model in our case however, TL is still a better model fit than NB2 due to better log-likelihoods and AIC values. Thus our top two models will be S and TL (S Distribution and Truncated Logistic).
 
 **Result of range analysis (an explanation of which part of data is good for proceeding with the analysis):**
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_2.PNG)
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_3.PNG)
 
 
 Overall we get a various range of analysis for the models in their specified covariates. The worst part of the data would be near the middle to end, as the IFR SB model graphs tend to start spiking in failures quite early and as a result with a short amount of intervals they begin witnessing more and more failures in an exponential manner. DW2 shows initial failures to be lower but gradually increase more than our best models which are S and TL. Overall in terms of failure consistency, S and TL demonstrated to be the most consistent, quite similar to a linear progression of failures where we know when these failures likely occur. Therefore the earlier parts of the data demonstrate lower failures obviously but specific models dictate where they tend to spike. It also should be noted we have 30 failures in total to work with, which may pose a limitation of the failure report paper as more failures would give us better data to work with. If we had to predict the model we see that some models still persist in the mean value function whereas S and TL remain consistent with their previous indicated trends and consistently predict the same mean value. The trend could potentially be formulated better using the laplace test but for the purposes of this assignment and to demonstrate trends through the use of the program C-SFRAT we have chosen to show the trends as they are through the predictions of the models provided.
 
 **Plots for failure rate and reliability of the SUT for the test data provided**
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_4.PNG)
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_5.PNG)
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_6.PNG)
 
 As seen by the intensity graph, the failure intensity is often seen in increasing and decreasing patterns, with IFR SB, primarily the intensity spikes and is unreliable many times but the reliability does smoothen out after approximately 18 intervals. Nearly all the other models dictate values at 2 or lower demonstrating that there is stable reliability. S and TL are fully stable at the severity of 1 and are not as variable as the others. Within the failure report we witnessed a severity failure of 1 across the board. Specifically for  failure report #9, and the consistent failure severity class of 1 is unique to the paper. How this reflects upon the data is that the program itself does not have many failures occasionally coming and is for the most part a predictable program with occasional variabilities. If we were to use the models for prediction then we can see which models dictate the outcomes in different ways. We can see that NB2 is the only model that predicts that the intensity will persist but occasionally lessen in severity whereas the other models predict a spike which will later subside until the program is complete. What this means for the reliability of the SUT is that it may become unreliable during longer periods of time but could also see much lower reliability the longer the program goes on.
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_7.PNG)
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_8.PNG)
 
 If failure intensity was calculated in an incremental manner, that is the failure count was consistently increasing as the severity is 1 through every test case, and as such we would have that incremental pattern of going up by 1 for the failure count as well. This is another approach to visualizing the data and if done this way we can notice IFR is still the model that provides us with outliers in the trend and overall dictates that the system is still facing the most failures under the early stages and the intensity of the failures is most prevalent there. Looking back at the results of the model we also know IFR does not have the best log-likelihood and as such it does not determine the best fit of or goodness of the best fit in the best manner. Therefore, we know what points are erratic for our graph and the failure intensity is best calculated as increasing while going up.
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_9.PNG)
 
 We can also predict the trend of the failure intensity and see that the intensity may stay consistent and still occasionally spike but it will eventually start to ease out from that moment as the failure intensity target reaches 1 through simulation. This is what the model predicts for us. What this means for the reliability of the SUT is that it may become unreliable during longer periods of time but could also see much lower reliability the longer the program goes on because the overall stability in the program according to the failure report is quite inconsistent overall despite having a severity class of 1 across the board and unforeseen reliability issues may still persist.
 
@@ -60,15 +60,15 @@ When we’re looking at software reliability testing, we need to understand that
 
 MTTFmin
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_10.PNG)
 
 MTTFmin*2
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_11.PNG)
 
 MTTFmin/2
 
-![Alt text](./images/Range_Before.PNG)
+![Alt text](./images/img_12.PNG)
 
 **Explain your evaluation and justification of how you decide the MTTFmin**
 
