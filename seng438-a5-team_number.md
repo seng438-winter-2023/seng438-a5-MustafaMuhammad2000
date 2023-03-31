@@ -4,8 +4,8 @@
 
 | Group \#:       | 23  |
 |-----------------|---|
-| Student Names:  | Mustafa Muhammad   |
-|                 | Samuel Tomocek   |
+| Student Names:  | Mustafa Muhammad  |
+|                 | Samuel Tomocek  |
 |                 | Umair Tariq |
 |                 | Gian Luke Adug |
 
@@ -72,7 +72,7 @@ MTTFmin/2
 
 **Explain your evaluation and justification of how you decide the MTTFmin**
 
-To determine a suitable value for the MTTFmin, we considered both statistical analysis and practical experience in reliability engineering. We first calculated the mean and median MTTF values from our dataset of failure times (Failure Report 9.docx). The mean MTTF value was 1.75 minutes per failure, while the median was 1 minute per failure. We then consulted the class slides and referred back to our previous knowledge of statistics to identify a good rule of thumb for defining MTTFmin value. Based on this, we decided to use a range of 30-50% of the MTTF mean value as a guideline. Using this guideline, we decided to choose a value near the middle of the range and selected a MTTF min value of 40$ of the MTTF mean value, which came out to be 0.7 minutes per failure. This choice was based on the idea that a MTTFmin value within this range would allow us to sufficiently capture the failure characteristics of the system, while still being practical to use in reliability analysis. Overall, we believe that this approach represents a balanced consideration of statistical analysis and practical experience in selecting a suitable MTTFmin value for our dataset. 
+To determine a suitable value for the MTTFmin, we considered both statistical analysis and practical experience in reliability engineering. We first calculated the mean and median MTTF values from our dataset of failure times (Failure Report 9.docx). The mean MTTF value was 1.75 minutes per failure, while the median was 1 minute per failure. We then consulted the class slides and referred back to our previous knowledge of statistics to identify a good rule of thumb for defining MTTFmin value. Based on this, we decided to use a range of 30-50% of the MTTF mean value as a guideline. Using this guideline, we decided to choose a value near the middle of the range and selected a MTTF min value of 40% of the MTTF mean value, which came out to be 0.7 minutes per failure. This choice was based on the idea that a MTTFmin value within this range would allow us to sufficiently capture the failure characteristics of the system, while still being practical to use in reliability analysis. Overall, we believe that this approach represents a balanced consideration of statistical analysis and practical experience in selecting a suitable MTTFmin value for our dataset. 
 
 **A discussion on the advantages and disadvantages of RDC**
 
@@ -86,7 +86,6 @@ First of all, both methods RDC and RGT are that the goal of both methods is to a
 
 # How the team work/effort was divided and managed
 
-The team divided the work into two portions, with two members focusing on reliability growth testing and two members focusing on adequacy of testing. Each member was responsible for developing the content for their respective parts, including explaining the concepts, providing examples, and creating exercises for the students to practice. The team managed their efforts by scheduling regular meetings to discuss progress, providing feedback on each other's work, and collaborating to ensure the course material was coherent and consistent. The success of the team's efforts relied on effective communication, clear goals and expectations, and a shared commitment to producing high-quality course material.
 
 # 
 
